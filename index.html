@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>UQ Scoop</title>
+</head>
+
+<body>
+    <!-- Navigation-bar and header of all pages in the site-->
+    <div class="nav_container">
+        <div class="menu">
+            <img src="images/uq_logo.png" alt="uq scoop logo" class="scoop-logo">
+            <nav>
+                <ul id="navMenu-list">
+                    <li><a href="">Places</a></li>
+                    <li><a href="">What's new?</a></li>
+                    <li><a href="">UQ Maps</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+            <img src="images/larr.png" alt="menu logo" class="menu-logo" onclick="shownav()">
+            <!-- Navigation-bar end-->
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h1> Welcome to UQ </h1>
+                <p> Hello There! </p>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <img src="images/twitter.png" alt="twitter logo">
+            <img src="images/fb.png" alt="facebook logo">
+        </div>
+    </div>
+
+
+    <!-- TODO: Homepage - SlideShow-->
+
+    <!-- Homepage - SlideShow End-->
+
+
+    <!-- Script to toggle menu on/off for mobile devices -->
+    <!-- TODO: Add to JS file -->
+    <script>
+        var list = document.getElementById("navMenu-list");
+        list.style.maxHeight = "0px";
+
+        function shownav() {
+            if (list.style.maxHeight == "0px") {
+                list.style.maxHeight = "150px"
+            } else {
+                list.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>

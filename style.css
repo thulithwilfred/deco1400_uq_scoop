@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+/* Image(s) Scaling */
+.scoop-logo {
+    width: 60px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-logo {
+    width: 30px;
+    cursor: pointer;
+    /* menu selector is a mobile option */
+    display: none;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media img {
+    margin: 15px;
+    cursor: pointer;
+    height: 20px;
+}
+
+/* Navigation Menus */
+.nav_container{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Menu Options */
+nav {
+    flex: auto;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 100px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: rgb(150, 38, 255);
+}
+
+/* Home Page Contents */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h1 {
+    font-size: 54px;
+}
+
+.col-1 p {
+    font-size: 16px;
+    font-weight: 100;
+    color: #9f8aff;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+/* Slide Show Styling */
+
+
+
+/* Slide Show End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Implement responsiveness for device with max width 700px */
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#c684ff, #7d40ff);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #ffffff;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .menu-logo {
+        display: block;
+    }
+
+    #navMenu-list {
+        overflow: hidden;
+        transition: 0.25s;
+    }
+}
