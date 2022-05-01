@@ -1,0 +1,60 @@
+/* The following CSS is implemented for the slide-show on the Home Page
+ * The CSS has been referenced from a design sample in W3-Schools
+ * as per: https://www.w3schools.com/howto/howto_js_slideshow.asp
+ */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.slides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+  .text {font-size: 11px}
+  .dot{
+    height: 5px;
+    width: 5px;
+    margin: 1 1px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+
+}

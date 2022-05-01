@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+body {background-color: #3c3c3c;}
+
+/* Image(s) Scaling */
+.scoop-logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-logo {
+    /* Displayed in mobile only */
+    width: 20px;
+    cursor: pointer;
+    /* menu selector is a mobile option */
+    display: none;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media img {
+    /* Social Media Images */
+    margin: 15px;
+    cursor: pointer;
+    height: 40px;
+}
+
+/* Navigation Menus */
+.nav_container{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Menu Options */
+nav {
+    flex: auto;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 100px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+    color: rgb(185, 144, 255);
+}
+
+/* Home Page Contents */
+.title-1 {
+    display: flex;
+    text-decoration: none;
+    flex-basis: 40%;
+    display: inline;
+    font-size: xx-large;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Transparent Box Background */
+.transbox {
+    margin: 30px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+
+.transbox p {
+    margin: 5%;
+    /* font-weight: bold; */
+    color: #000000;
+}
+
+/* Implement responsiveness for device with max width 1000px
+ * 1000px here is relatively large, but it is used to account for
+ * mobile devices in landscape mode.
+ */
+@media only screen and (max-width:1000px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#4d4d4d, #4d445f);
+        position: absolute;
+        top: 88px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: medium;
+    }
+
+    nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+        color: rgb(185, 144, 255);
+        font-style: oblique;
+        font-weight: bold;
+        left: 0%;
+    }
+
+    /* Home Page Contents */
+    .title-1 {
+        display: flex;
+        font-size: large;
+        text-align: center;
+        color: whitesmoke;
+        text-decoration: none;
+        flex-basis: 40%;
+        display: inline;
+        padding: 5px;
+    }
+
+    /* Transparent Box Background */
+    .transbox {
+        margin: 30px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+
+    .transbox p {
+        margin: 5%;
+        /* font-weight: bold; */
+        color: #000000;
+    }
+
+    .menu-logo {
+        display: block;
+    }
+
+    #navMenu-list {
+        overflow: hidden;
+        transition: 0.25s;
+    }
+
+    .scoop-logo {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin: 30px 0;
+        display: block;
+    }
+
+        /* Transparent Box Background */
+    .transbox {
+        margin: auto;
+        width: 100%;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+
+    .transbox p {
+        margin-left: 5%;
+        margin-right: 5%;
+        /* font-weight: bold; */
+        color: #000000;
+    }
+}

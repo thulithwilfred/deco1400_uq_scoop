@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slides.css">
     <title>UQ Scoop</title>
 </head>
 
@@ -19,15 +20,45 @@
                     <li><a href="">About</a></li>
                 </ul>
             </nav>
-            <img src="images/larr.png" alt="menu logo" class="menu-logo" onclick="shownav()">
+            <img src="images/larr1.png" alt="menu logo" class="menu-logo" onclick="shownav()">
             <!-- Navigation-bar end-->
         </div>
+    <!-- TODO: Homepage - SlideShow-->
+    <div class="slideshow-container">
 
-        <div class="row">
-            <div class="col-1">
-                <h1> Welcome to UQ </h1>
-                <p> Hello There! </p>
-            </div>
+        <div class="slides fade">
+          <img src="images/slidec_1.jpg" style="width:100%">
+        </div>
+
+        <div class="slides fade">
+          <img src="images/slidec_2.jpg" style="width:100%">
+        </div>
+
+        <div class="slides fade">
+          <img src="images/slidec_3.jpg" style="width:100%">
+        </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+    <!-- Homepage - SlideShow End-->
+
+        <div class="title-1">
+                <h1 > The UQ Scoop </h1>
+        </div>
+
+        <div class="transbox">
+            <p>
+                Welcome to the University of Queensland! There are many things to do and see at UQ. UQ Scoop contains
+                all the upto date information about what's happening at UQ, and all the fun activities you can take part in.
+                <br><br>
+                UQ Scoop will be your best source for everything UQ!
+            </p>
         </div>
 
         <div class="social-media">
@@ -35,27 +66,8 @@
             <img src="images/fb.png" alt="facebook logo">
         </div>
     </div>
-
-
-    <!-- TODO: Homepage - SlideShow-->
-
-    <!-- Homepage - SlideShow End-->
-
-
-    <!-- Script to toggle menu on/off for mobile devices -->
-    <!-- TODO: Add to JS file -->
-    <script>
-        var list = document.getElementById("navMenu-list");
-        list.style.maxHeight = "0px";
-
-        function shownav() {
-            if (list.style.maxHeight == "0px") {
-                list.style.maxHeight = "150px"
-            } else {
-                list.style.maxHeight = "0px"
-            }
-        }
-    </script>
-
 </body>
 </html>
+
+<!--Link external JS-->
+<script src="js/scripts.js"></script>
