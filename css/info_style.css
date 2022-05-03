@@ -1,0 +1,58 @@
+div.info-row {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(250, 250, 250);
+  border-color: rgb(255, 255, 255);
+  opacity: 0.9;
+  margin: 0.5%;
+}
+
+
+div.info-row:hover, div.info-row:focus, div.info-row:active {
+  border: 1px solid blueviolet;
+  background-color: rgb(255, 255, 255);
+}
+
+div.info-row img {
+  width: 100%;
+  height: auto;
+}
+
+div.info-row h3 {
+  text-align: center;
+  padding-top: 1%;
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+}
+
+div.info-row p {
+  padding: 15px;
+  font-size: small;
+  text-align: center;
+  color: rgb(37, 37, 37);
+}
+
+
+.responsive {
+  margin-left: 2.5%;
+  margin-bottom: 5%;
+  float:left;
+  width: 29.99999%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .responsive {
+    width: 99.99999%;
+    margin: 6px 0;
+  }
+}

@@ -84,6 +84,10 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
     color: rgb(255, 255, 255);
 }
 
+nav ul li a:active {
+    color: blueviolet;
+}
+
 /* Home Page Contents */
 .title-1 {
     display: flex;
@@ -103,7 +107,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
     background-color: whitesmoke;
     border: 1px solid rgb(167, 35, 255);
     border-style: double;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
 .transbox p {
@@ -162,7 +166,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         margin: 30px;
         background-color: whitesmoke;
         border: 1px solid black;
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
     .transbox p {
