@@ -1,6 +1,7 @@
 /* The following CSS is implemented for the slide-show on the Home Page
  * The CSS has been referenced from a design sample in W3-Schools
  * as per: https://www.w3schools.com/howto/howto_js_slideshow.asp
+ * and have been modified to meet design requirement of this project.
  */
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}

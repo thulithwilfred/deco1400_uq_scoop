@@ -1,0 +1,60 @@
+/* The following CSS is implemented for the clickable image gallery on the places page.
+* The CSS has been referenced from a design sample in W3-Schools
+* as per: https://www.w3schools.com/css/css_image_gallery.asp and have been
+* modified to meet design requirement of this project.
+*/
+
+div.gallery {
+  border: 1px solid rgb(255, 218, 218);
+  background-color: rgb(250, 250, 250);
+  flex: content;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%
+}
+
+div.gallery:hover, div.gallery:focus, div.gallery:active {
+  border: 1px solid rgb(166, 33, 255);
+  background-color: rgb(219, 204, 239);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  font-size: large;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  margin-left: 2.5%;
+  float:left;
+  width: 29.99999%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+      width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

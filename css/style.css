@@ -22,13 +22,15 @@ body {background-color: #3c3c3c;}
     display: none;
 }
 
-.social-media {
-    float: bottom;
-    position: relative;
+.links {
     text-align: center;
+    background: linear-gradient(to left, #7f7196, #cecece);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.social-media img {
+.links img {
     /* Social Media Images */
     margin: 15px;
     cursor: pointer;
@@ -110,14 +112,14 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
     color: #000000;
 }
 
-/* Implement responsiveness for device with max width 1000px
- * 1000px here is relatively large, but it is used to account for
+/* Implement responsiveness for device with max width 1200px
+ * 1200px here is relatively large, but it is used to account for
  * mobile devices in landscape mode.
  */
 @media only screen and (max-width:1200px) {
     nav ul {
         width: 100%;
-        background: linear-gradient(to right, #3c3c3c, #3b314d);
+        background: linear-gradient(to left, #7f7196, #cecece);
         position: absolute;
         top: 88px;
         right: 0;
@@ -132,6 +134,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
 
     nav ul li a {
         font-size: medium;
+        color: #222222;
     }
 
     nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
@@ -201,3 +204,30 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         color: #000000;
     }
 }
+
+/* Implement responsiveness for device with max width 1200px
+ * 1200px here is relatively large, but it is used to account for
+ * mobile devices in landscape mode.
+ */
+ @media only screen and (max-width:600px) {
+    .wide-only {
+        display: none;
+    }
+
+    .links {
+        text-align: center;
+        background: linear-gradient(to left, #7f7196, #cecece);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 8%;
+    }
+
+    .links img {
+        /* Social Media Images */
+        margin: 15px;
+        cursor: pointer;
+        height: 40px;
+    }
+
+ }
