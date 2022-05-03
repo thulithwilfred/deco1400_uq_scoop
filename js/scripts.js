@@ -42,6 +42,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  //Recursive call to update slide (5000ms -> 5s)
-  setTimeout(showSlides, 5000);
+  //Recursive call to update slide (3500ms -> 3.5s)
+  setTimeout(showSlides, 3500);
 }
