@@ -9,7 +9,7 @@ div.info-row {
 
 div.info-row:hover, div.info-row:focus, div.info-row:active {
   border: 1px solid blueviolet;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(252, 238, 255);
 }
 
 div.info-row img {
@@ -26,11 +26,10 @@ div.info-row h3 {
 
 div.info-row p {
   padding: 15px;
-  font-size: small;
+  font-size: medium;
   text-align: center;
   color: rgb(37, 37, 37);
 }
-
 
 .responsive {
   margin-left: 2.5%;

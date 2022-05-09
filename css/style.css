@@ -107,7 +107,7 @@ nav ul li a:active {
     background-color: whitesmoke;
     border: 1px solid rgb(167, 35, 255);
     border-style: double;
-    opacity: 0.8;
+    opacity: 0.95;
   }
 
 .transbox p {
