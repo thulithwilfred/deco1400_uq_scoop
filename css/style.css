@@ -101,9 +101,10 @@ nav ul li a:active {
 
 /* Transparent Box Background */
 .transbox {
-    margin-right: 25px;
-    margin-left: 25px;
+
+    margin-left: 7.5%;
     margin-top: 25px;
+    max-width: 85%;
     background-color: whitesmoke;
     border: 1px solid rgb(167, 35, 255);
     border-style: double;
@@ -195,9 +196,9 @@ nav ul li a:active {
         /* Transparent Box Background */
     .transbox {
         margin: auto;
-        width: 100%;
+        width: 80%;
         background-color: whitesmoke;
-        border: 1px solid rgb(167, 35, 255);
+        border: 1px solid blueviolet;
         border-style: double;
     }
 
@@ -233,5 +234,4 @@ nav ul li a:active {
         cursor: pointer;
         height: 40px;
     }
-
  }
