@@ -11,6 +11,16 @@ The following source implements HTML/CSS and JS for an information website. This
 - Unique Locations
 - Student help
 
+## File Structure
+
+`css/` : contains all style sheets used (html inline css is not used in this project)
+
+`js/` : contains all external java script functions and implementations.
+
+`images/` : contains all raw images
+
+`html/` : contains all the additional html pages that implement the site. 
+
 ## References
 [1] https://www.youtube.com/watch?v=lAOkx2yZESY - Base Model
 
