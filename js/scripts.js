@@ -3,6 +3,36 @@ var list = document.getElementById("navMenu-list");
 list.style.maxHeight = "0px";
 
 /**
+ * Zoom in on navbar icons on hover
+ */
+function image_pop(index) {
+    let elements = document.getElementsByClassName('wide-only');
+
+    if (index >= elements.length) {
+        console.error("nav icon index out of bounds")
+        return;
+    }
+
+    elements[index].style.transform = "scale(1.5)";
+    elements[index].style.filter = "invert(1.0)";
+}
+
+/**
+ * Zoom out on navbar icons out of hover
+ */
+function image_sqz(index) {
+    let elements = document.getElementsByClassName('wide-only');
+
+    if (index >= elements.length) {
+        console.error("nav icon index out of bounds")
+        return;
+    }
+
+    elements[index].style.transform = "scale(1.0)";
+    elements[index].style.filter = "invert(0.0)";
+}
+
+/**
  * Function to toggle the display height of the navigation menu
  *  on mobile displays.
  */

@@ -117,6 +117,12 @@ nav ul li a:active {
     color: #000000;
 }
 
+/* Nav bar, icon transition animation */
+.wide-only {
+    transition: 0.1s;
+}
+
+
 /* Implement responsiveness for device with max width 1200px
  * 1200px here is relatively large, but it is used to account for
  * mobile devices in landscape mode.
@@ -124,7 +130,7 @@ nav ul li a:active {
 @media only screen and (max-width:1200px) {
     nav ul {
         width: 100%;
-        background: linear-gradient(to left, #7f7196, #cecece);
+        background: linear-gradient(to left,  #d4aef2, #552586);
         position: absolute;
         top: 88px;
         right: 0;
@@ -216,7 +222,7 @@ nav ul li a:active {
  */
  @media only screen and (max-width:600px) {
     .wide-only {
-        display: none;
+        /* display: none; */
     }
 
     .links {
@@ -232,6 +238,6 @@ nav ul li a:active {
         /* Social Media Images */
         margin: 15px;
         cursor: pointer;
-        height: 40px;
+        height: 50%;
     }
  }
