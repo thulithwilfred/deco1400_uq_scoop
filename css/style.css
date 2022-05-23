@@ -101,7 +101,6 @@ nav ul li a:active {
 
 /* Transparent Box Background */
 .transbox {
-
     margin-left: 7.5%;
     margin-top: 25px;
     max-width: 85%;
@@ -114,8 +113,58 @@ nav ul li a:active {
 .transbox p {
     margin: 2.5%;
     /* font-weight: bold; */
-    color: #000000;
 }
+
+.news-board {
+    display: table-cell;
+    background: linear-gradient(to left,  #d4aef2, #552586);
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 2%;
+    border: 1px solid rgb(167, 35, 255);
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    /* Font Settings */
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+}
+
+.news-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #efe0ff;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2.5%;
+    margin-top: 2.0%;
+    /* Font Settings */
+    font-weight: normal;
+    font-size: medium;
+    color: black;
+    float:right;
+}
+
+.news-row:hover, .news-row:focus, .news-row:active {
+    background: linear-gradient(to left,  #ffffff, #e8d1ff);
+}
+
+.news-board-image {
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float:left;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.news-image {
+    width:280px;
+    height:auto;
+}
+
 
 /* Nav bar, icon transition animation */
 .wide-only {
@@ -239,5 +288,18 @@ nav ul li a:active {
         margin: 15px;
         cursor: pointer;
         height: 50%;
+    }
+
+    .news-image {
+        width:100%;
+        height:auto;
+        text-align: center;
+    }
+
+    .news-row {
+        padding: 5.0%;
+        margin-top: 5.0%;
+        text-align: center;
+        float:right;
     }
  }
