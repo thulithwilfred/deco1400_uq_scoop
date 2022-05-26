@@ -117,7 +117,7 @@ nav ul li a:active {
 
 .news-board {
     display: table-cell;
-    background: linear-gradient(to left,  #d4aef2, #552586);
+    background: linear-gradient(to left,  #ab44f9, #6427a0);
     padding: 3%;
     margin-left: 5%;
     margin-right: 2%;
@@ -137,7 +137,7 @@ nav ul li a:active {
     display: table;
     width: 100%;
     table-layout: fixed;
-    background-color: #efe0ff;
+    background-color: #f0e9f7;
     border: 1px solid rgb(0, 0, 0);
     padding: 2.5%;
     margin-top: 2.0%;
