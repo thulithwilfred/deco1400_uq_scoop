@@ -1,11 +1,12 @@
-/* The following script is implemented for the slide-show on the Home Page
- * The JS has been based on the design sample in W3-Schools
- * as per: https://www.w3schools.com/howto/howto_js_slideshow.asp
- */
+/* Globals */
 let slideIndex = 0;
-showSlides();
 
-/* Control automatic transition of slides */
+/* The following script is implemented for the slide-show on the Home Page
+ *
+ * The JS has been used as a reference from a design sample in W3-Schools
+ * as per: https://www.w3schools.cShowSlidesom/howto/howto_js_slideshow.asp
+ * To develop the following function.
+ */
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("slides_fade");
@@ -23,3 +24,5 @@ function showSlides() {
 
   setTimeout(showSlides, 3500);
 }
+
+showSlides();

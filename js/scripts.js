@@ -2,6 +2,7 @@
 var cursor_r = 0;
 var cursor_g = 0;
 var cursor_b = 0;
+
 var colGrad_lowerB = 0x552586;
 var colGrad_upperB = 0xB589D6;
 var inc_upper = 0;
@@ -128,7 +129,9 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
 
-/* Async function to change the cursor colour setting variables */
+/* Async function to change the cursor colour setting variables
+ * These values are then used to update the `buddy-cursor` colours.
+ */
 function cursor_change() {
   cursor_r = randomIntFromInterval(100, 255);
   cursor_g = randomIntFromInterval(0, 75);

@@ -1,6 +1,8 @@
 /* The following script is implemented for the slide-show on the Home Page
- * The JS has been referenced from a design sample in W3-Schools
+ *
+ * The JS has been used as a reference from a design sample in W3-Schools
  * as per: https://www.w3schools.cShowSlidesom/howto/howto_js_slideshow.asp
+ * To develop the following function.
  */
 let slideIndex = 1;
 usrShowSlides(slideIndex);
