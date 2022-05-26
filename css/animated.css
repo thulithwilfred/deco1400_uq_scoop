@@ -1,0 +1,38 @@
+#animated_text  {
+    background-image: linear-gradient(60deg, #8111e3, #FFB03A);
+    background-clip: text;
+    color: transparent;
+    font-size: 80px;
+    font-weight: bold;
+    text-align:  center;
+    margin-top: 5%;
+    font-family: sans-serif;
+}
+
+#animated_text1  {
+    background-image: linear-gradient(60deg, #8111e3, #FFB03A);
+    background-clip: text;
+    color: transparent;
+    font-size: 45px;
+    text-align:  center;
+    margin-top: 0.5%;
+    font-family: sans-serif;
+}
+
+#animated_text2  {
+    background-image: linear-gradient(60deg, #8111e3, #caa9f8);
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+    font-weight: bold;
+    text-align:  center;
+    margin-top: 0.5%;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width:600px) {
+    #animated_text2  {
+        font-size: 50px;
+        margin: 1%;
+    }
+}
