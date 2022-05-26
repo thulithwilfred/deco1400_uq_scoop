@@ -6,7 +6,6 @@ div.info-row {
   margin: 0.5%;
 }
 
-
 div.info-row:hover, div.info-row:focus, div.info-row:active {
   border: 1px solid blueviolet;
   background-color: rgb(252, 238, 255);
@@ -36,7 +35,7 @@ div.info-row p {
   margin-left: 10%;
   margin-bottom: 5%;
   float: left;
-  width: 33.333333%;
+  width: 33.33333%;
 }
 
 * {
@@ -48,16 +47,16 @@ div.info-row p {
   opacity: 0%;
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
-}
+} */
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 600px) {
   .responsive {
-    width: 99.99999%;
+    width: 100%;
     margin: 6px 0;
   }
 }

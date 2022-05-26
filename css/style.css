@@ -148,6 +148,18 @@ nav ul li a:active {
     float:right;
 }
 
+.news-info {
+    margin-left: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.news-info h3 {
+    text-decoration: underline;
+    color: black;
+}
+
 .news-row:hover, .news-row:focus, .news-row:active {
     background: linear-gradient(to left,  #ffffff, #e8d1ff);
 }
@@ -263,6 +275,12 @@ nav ul li a:active {
         /* font-weight: bold; */
         color: #000000;
     }
+
+    .news-info {
+        margin-left: 15%;
+        padding-left: 15%;
+        text-align: left;
+    }
 }
 
 /* Implement responsiveness for device with max width 1200px
@@ -301,5 +319,11 @@ nav ul li a:active {
         margin-top: 5.0%;
         text-align: center;
         float:right;
+    }
+
+    .news-info {
+        margin-left: 5%;
+        padding-left: 5%;
+        text-align: left;
     }
  }
