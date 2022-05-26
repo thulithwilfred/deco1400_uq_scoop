@@ -55,13 +55,6 @@ function showNav() {
     }
 }
 
-/**
- * Function to load in repeated HTML for the navigation menu.
- */
-function loadNavHTML() {
-  $("#nav-placeholder").load("../nav_menu.html")
-}
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
