@@ -1,0 +1,10 @@
+#buddy-cursor {
+    display: none;
+    transition-timing-function: ease-out;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(188, 43, 255);
+    border-radius: 60%;
+    z-index: -1;
+}

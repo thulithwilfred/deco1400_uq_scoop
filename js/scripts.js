@@ -1,3 +1,14 @@
+/* Globals */
+var cursor_r = 0;
+var cursor_g = 0;
+var cursor_b = 0;
+var colGrad_lowerB = 0x552586;
+var colGrad_upperB = 0xB589D6;
+var inc_upper = 0;
+var inc_lower = 0;
+var colGrad2_lowerB = 0x7f7196;
+var colGrad2_upperB = 0xbfb8ca;
+
 /* Mobile Animations */
 var list = document.getElementById("navMenu-list");
 list.style.maxHeight = "0px";
@@ -60,12 +71,6 @@ function sleep(ms) {
  * Note: lower/upper colour bound should be set appropriately,
  *       such that the lowerB < upperB.
  */
-var colGrad_lowerB = 0x552586;
-var colGrad_upperB = 0xB589D6;
-var inc_upper = 0;
-var inc_lower = 0;
-var colGrad2_lowerB = 0x7f7196;
-var colGrad2_upperB = 0xbfb8ca;
 function dynamicNavBarColour() {
     var colGradHex = 0;
     var colGradHex2 = 0;
@@ -101,5 +106,44 @@ function dynamicNavBarColour() {
     }, 100)
 }
 
+/* Tracks and updates the buddy cursor in real-time
+ * This serves no actual purpose, just added it for fun
+ *
+ * TODO: For this to work with default cursor disabled, lots of z indexes
+ * need to be changes for that it can work on the foreground
+ * whilst being clickable.
+ */
+function cursor_track() {
+    var cursor = document.getElementById("buddy-cursor");
+    /* Register on mouse move callback */
+    document.onmousemove = function(e) {
+        cursor.style.display = "block";
+        cursor.style.left = (e.pageX - 15) + "px";
+        cursor.style.top = (e.pageY - 15) + "px";
+
+        cursor.style.backgroundColor = 'rgb(' + cursor_r + ','
+        + cursor_g + ','
+        + cursor_b + ')';
+    }
+}
+
+/* This function returns a `random` number between min. max
+ * Function has been referenced here:
+ * https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
+ */
+function randomIntFromInterval(min, max) { // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+
+/* Async function to change the cursor colour setting variables */
+function cursor_change() {
+  cursor_r = randomIntFromInterval(100, 255);
+  cursor_g = randomIntFromInterval(0, 75);
+  cursor_b = randomIntFromInterval(100, 255);
+  setTimeout(cursor_change, 300);
+}
+
 /* Init */
 dynamicNavBarColour();
+cursor_track();
+cursor_change();
