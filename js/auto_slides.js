@@ -1,5 +1,5 @@
 /* The following script is implemented for the slide-show on the Home Page
- * The JS has been referenced from a design sample in W3-Schools
+ * The JS has been based on the design sample in W3-Schools
  * as per: https://www.w3schools.com/howto/howto_js_slideshow.asp
  */
 let slideIndex = 0;
@@ -20,6 +20,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   blocks[slideIndex-1].className += " active";
-  //Recursive call to update slide (3500ms -> 3.5s)
+
   setTimeout(showSlides, 3500);
 }
