@@ -346,3 +346,29 @@ nav ul li a:active {
         text-align: left;
     }
  }
+
+ @media only screen and (max-height:400px) {
+    .news-board-image {
+            border: 0px solid rgb(0, 0, 0);
+    }
+
+
+    .news-image {
+        width:50%;
+        height:auto;
+        text-align: left;
+    }
+
+    .news-row {
+        padding: 5.0%;
+        margin-top: 5.0%;
+        text-align: right;
+        float:right;
+    }
+
+    .news-info {
+        margin-left: 5%;
+        padding-left: 5%;
+        text-align: left;
+    }
+ }
