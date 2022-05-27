@@ -9,13 +9,15 @@ var inc_upper = 0;
 var inc_lower = 0;
 var colGrad2_lowerB = 0x7f7196;
 var colGrad2_upperB = 0xbfb8ca;
+var navbar_mode = 0;
 
 /* Mobile Animations */
 var list = document.getElementById("navMenu-list");
 list.style.maxHeight = "0px";
 
 /**
- * Zoom in on navbar icons on hover
+ * Implements fixed navbar icon zoom in and
+ * colour invert of the selected item (based on the index arg)
  */
 function image_pop(index) {
     let elements = document.getElementsByClassName('wide-only');
@@ -28,9 +30,9 @@ function image_pop(index) {
     elements[index].style.transform = "scale(1.5)";
     elements[index].style.filter = "invert(1.0)";
 }
-
 /**
- * Zoom out on navbar icons out of hover
+ * Implements fixed navbar icon zoom reset and
+ * colour revert of the selected item (based on the index arg)
  */
 function image_sqz(index) {
     let elements = document.getElementsByClassName('wide-only');
@@ -54,10 +56,6 @@ function showNav() {
     } else {
         list.style.maxHeight = "0px"
     }
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**

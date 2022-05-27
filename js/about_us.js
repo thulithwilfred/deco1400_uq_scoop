@@ -3,7 +3,7 @@ var state = true;
 var draw_str = "ABOUT US";
 
 
-/* Simple function to toggle a string state */
+/* Toggle the string based on the `state` to show blinking effect */
 function blink() {
     if (state) {
         document.getElementById("animated_text1").innerHTML = "<\t/\t>"
@@ -16,9 +16,7 @@ function blink() {
 }
 
 
-/* Simple function to draw char by char the draw_str by appending to
- * inner html
- */
+/* Draw the hardcoded "draw_str" character by character with a 100ms delay between */
 function effect() {
     if(i<draw_str.length) {
         document.getElementById("animated_text").innerHTML += draw_str.charAt(i++);

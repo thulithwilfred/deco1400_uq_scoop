@@ -8,17 +8,21 @@ let slideIndex = 1;
 usrShowSlides(slideIndex);
 autoIncrement();
 
-/* Perform an automatic transition */
+/* Perform an automatic transition on slides
+ * independently of the user input
+ */
 function autoIncrement() {
     /* Set timeout for auto increment */
     setTimeout(autoIncrement, 8000);
     plusSlides(1);
 }
 
+/* Increment the slide index by n and draw slide*/
 function plusSlides(n) {
   usrShowSlides(slideIndex += n);
 }
 
+/* Jump to the nth slide */
 function currentSlide(n) {
   usrShowSlides(slideIndex = n);
 }
