@@ -7,7 +7,6 @@
     font-weight: bold;
     text-align:  center;
     margin-top: 5%;
-    font-family: sans-serif;
 }
 
 #animated_text1  {
@@ -18,7 +17,6 @@
     font-size: 45px;
     text-align:  center;
     margin-top: 0.5%;
-    font-family: sans-serif;
 }
 
 #animated_text2  {
@@ -30,7 +28,6 @@
     font-weight: bold;
     text-align:  center;
     margin-top: 0.5%;
-    font-family: sans-serif;
 }
 
 @media only screen and (max-width:600px) {
